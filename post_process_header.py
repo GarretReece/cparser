@@ -28,7 +28,7 @@ def get_lines(file_names):
     strip_line = line.strip(" \n\r\t")
     if not strip_line:
       continue
-    
+
     # Turn things like `#  define` into `#define`.
     strip_line = strip_line.replace(r"#[ ]+", "#")
     if strip_line.startswith("#"):
